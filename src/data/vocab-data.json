@@ -1,0 +1,1151 @@
+[
+  {
+    "id": "1",
+    "name": "Contracts",
+    "image": "assets/images/lessons/contracts.jpg",
+    "words": [
+      {
+        "id": "1",
+        "term": "abide by",
+        "type": "(v)",
+        "meaning": "to comply with; to conform",
+        "pronunciation": "/əˈbaɪd/",
+        "example": "",
+        "audio": "abideby",
+        "image": "assets/images/words/abideby.jpg"
+      },
+      {
+        "id": "2",
+        "term": "agreement",
+        "type": "(n)",
+        "meaning": "a mutual arrangement, a contract",
+        "pronunciation": "/əˈɡriː.mənt/",
+        "example": "",
+        "audio": "agreement",
+        "image": "assets/images/words/agreement.jpg"
+      },
+      {
+        "id": "3",
+        "term": "assurance",
+        "type": "(n)",
+        "meaning": "a guarantee; confidence",
+        "pronunciation": "/əˈʃɔː.rəns/",
+        "example": "",
+        "audio": "assuarance",
+        "image": "assets/images/words/assurance.jpg"
+      },
+      {
+        "id": "4",
+        "term": "cancellation",
+        "type": "(n)",
+        "meaning": "annulment; stopping",
+        "pronunciation": "/ˌkæn.səlˈeɪ.ʃən/",
+        "example": "",
+        "audio": "cancellation",
+        "image": "assets/images/words/cancel.jpg"
+      },
+      {
+        "id": "5",
+        "term": "determine",
+        "type": "(v)",
+        "meaning": "to find out; to influence",
+        "pronunciation": "/dɪˈtɜː.mɪn/",
+        "example": "",
+        "audio": "determine",
+        "image": "assets/images/words/determine.jpg"
+      },
+      {
+        "id": "6",
+        "term": "engage",
+        "type": "(v)",
+        "meaning": "participate; involve",
+        "pronunciation": "/ɪnˈɡeɪdʒ/",
+        "example": "",
+        "audio": "engagement",
+        "image": "assets/images/words/engage.jpg"
+      },
+      {
+        "id": "7",
+        "term": "establish",
+        "type": "(v)",
+        "meaning": "to institute permanently; to bring out",
+        "pronunciation": "/ɪˈstæb.lɪʃ/",
+        "example": "",
+        "audio": "establish",
+        "image": "assets/images/words/establish.jpg"
+      },
+      {
+        "id": "8",
+        "term": "obligate",
+        "type": "(v)",
+        "meaning": "to bind legally or morally",
+        "pronunciation": "/ˈɑb·ləˌɡeɪt/",
+        "example": "",
+        "audio": "obligate",
+        "image": "assets/images/words/obligate.jpg"
+      },
+      {
+        "id": "9",
+        "term": "party",
+        "type": "(n)",
+        "meaning": "a person or group participating in an action or plan; the persons or sides concerned in a legal matter",
+        "pronunciation": "/ˈpɑːr.t̬i/",
+        "example": "",
+        "audio": "party",
+        "image": "assets/images/words/party.jpg"
+      },
+      {
+        "id": "10",
+        "term": "provision",
+        "type": "(n)",
+        "meaning": "a measure taken beforehand; a stipulation",
+        "pronunciation": "/prəˈvɪʒ.ən/",
+        "example": "",
+        "audio": "provision",
+        "image": "assets/images/words/provision.jpg"
+      },
+      {
+        "id": "11",
+        "term": "resolve",
+        "type": "(v)",
+        "meaning": "to deal with successfully; to declare",
+        "pronunciation": "/rɪˈzɑːlv/",
+        "example": "",
+        "audio": "resolve",
+        "image": "assets/images/words/resolve.jpg"
+      },
+      {
+        "id": "12",
+        "term": "specific",
+        "type": "(adj)",
+        "meaning": "particular",
+        "pronunciation": "/spəˈsɪf.ɪk/",
+        "example": "",
+        "audio": "specific",
+        "image": "assets/images/words/specific.jpg"
+      }
+    ]
+  },
+  {
+    "id": "2",
+    "name": "Marketing",
+    "image": "assets/images/lessons/marketing.jpg",
+    "words": [
+      {
+        "id": "13",
+        "term": "attract ",
+        "type": "(v)",
+        "meaning": "to draw by appeal",
+        "pronunciation": "/ə'trækt/",
+        "example": "",
+        "audio": "attract",
+        "image": "assets/images/words/attract.jpg"
+      },
+      {
+        "id": "14",
+        "term": "compare",
+        "type": "(v)",
+        "meaning": "to examine people or things to see how they are similar and how they are different",
+        "pronunciation": "/kəm'peə/",
+        "example": "",
+        "audio": "compare",
+        "image": "assets/images/words/compare.jpg"
+      },
+      {
+        "id": "15",
+        "term": "competition",
+        "type": "(n)",
+        "meaning": "a situation in which people or organizations compete with each other for something that not everyone can have",
+        "pronunciation": "/,kɔmpi'tiʃn/",
+        "example": "",
+        "audio": "competition",
+        "image": "assets/images/words/competition.jpg"
+      },
+      {
+        "id": "16",
+        "term": "consume",
+        "type": "(v)",
+        "meaning": "to use something, especially fuel, engery or time",
+        "pronunciation": "/kən'sju:m/",
+        "example": "",
+        "audio": "consume",
+        "image": "assets/images/words/consume.jpg"
+      },
+      {
+        "id": "17",
+        "term": "convince",
+        "type": "(v)",
+        "meaning": "to make somebody / yourselft believe that something is true",
+        "pronunciation": "/kən'vins/",
+        "example": "",
+        "audio": "convince",
+        "image": "assets/images/words/convince.jpg"
+      },
+      {
+        "id": "18",
+        "term": "currently",
+        "type": "(adv)",
+        "meaning": " at the present time",
+        "pronunciation": "/ˈkʌrəntli/",
+        "example": "",
+        "audio": "currently",
+        "image": "assets/images/words/currently.jpg"
+      },
+      {
+        "id": "19",
+        "term": "fad",
+        "type": "(n)",
+        "meaning": "something that people are interested in for only a short period of time.",
+        "pronunciation": "/fæd/",
+        "example": "",
+        "audio": "fad",
+        "image": "assets/images/words/fad.jpg"
+      },
+      {
+        "id": "20",
+        "term": "inspiration",
+        "type": "(n)",
+        "meaning": " a thing or person that arouses a feeling",
+        "pronunciation": "/,inspə'reiʃn/",
+        "example": "",
+        "audio": "inspiration",
+        "image": "assets/images/words/inspiration.jpg"
+      },
+      {
+        "id": "21",
+        "term": "market",
+        "type": "(v)",
+        "meaning": "to advertise and offer a product for sale",
+        "pronunciation": "/'mɑ:kit/",
+        "example": "",
+        "audio": "market",
+        "image": "assets/images/words/market.jpg"
+      },
+      {
+        "id": "22",
+        "term": "persuasion",
+        "type": "(n)",
+        "meaning": "the power to influence, a deep conviction or belief.",
+        "pronunciation": " /pə'sweiʤn/",
+        "example": "",
+        "audio": "persuasion",
+        "image": "assets/images/words/persuasion.jpg"
+      },
+      {
+        "id": "23",
+        "term": "productive",
+        "type": "(adj)",
+        "meaning": "constructive, hight yield",
+        "pronunciation": "/prəˈdʌktɪv/",
+        "example": "",
+        "audio": "productive",
+        "image": "assets/images/words/productive.jpg"
+      },
+      {
+        "id": "24",
+        "term": "satisfaction",
+        "type": "(n)",
+        "meaning": "the good feeling that you have when you have achieved something",
+        "pronunciation": "/,sætis'fækʃn/",
+        "example": "",
+        "audio": "satisfaction",
+        "image": "assets/images/words/satisfaction.jpg"
+      }
+    ]
+  },
+  {
+    "id": "3",
+    "name": "Warranties",
+    "image": "assets/images/lessons/warranties.jpg",
+    "words": [
+      {
+        "id": "25",
+        "term": "characteristic ",
+        "type": "",
+        "meaning": "adj: revealing of individual traits; n: an individual trait",
+        "pronunciation": "/,kæriktə'ristik/",
+        "example": "",
+        "audio": "characteristic",
+        "image": "assets/images/words/characteristic.jpg"
+      },
+      {
+        "id": "26",
+        "term": "consequence",
+        "type": "(n)",
+        "meaning": "that which follows necessarily",
+        "pronunciation": "/'kɔnsikwəns/",
+        "example": "",
+        "audio": "consequence",
+        "image": "assets/images/words/consequence.jpg"
+      },
+      {
+        "id": "27",
+        "term": "consider",
+        "type": "(v)",
+        "meaning": "to think about carefully",
+        "pronunciation": "/kən'sidə/",
+        "example": "",
+        "audio": "consider",
+        "image": "assets/images/words/consider.jpg"
+      },
+      {
+        "id": "28",
+        "term": "cover",
+        "type": "(v)",
+        "meaning": "to provide protection against",
+        "pronunciation": "/'kʌvə/",
+        "example": "",
+        "audio": "cover",
+        "image": "assets/images/words/cover.jpg"
+      },
+      {
+        "id": "29",
+        "term": "expiration",
+        "type": "(n)",
+        "meaning": "the end",
+        "pronunciation": "/,ekspaiə'reiʃn/",
+        "example": "",
+        "audio": "expiration",
+        "image": "assets/images/words/expiration.jpg"
+      },
+      {
+        "id": "30",
+        "term": "frequently",
+        "type": "(adv)",
+        "meaning": "occurring commonly; widespread",
+        "pronunciation": "/ˈfriː.kwənt.li/ ",
+        "example": "",
+        "audio": "frequently",
+        "image": "assets/images/words/frequently.jpg"
+      },
+      {
+        "id": "31",
+        "term": "imply",
+        "type": "(v)",
+        "meaning": "to indicate by inference",
+        "pronunciation": "/im'plai/",
+        "example": "",
+        "audio": "imply",
+        "image": "assets/images/words/imply.jpg"
+      },
+      {
+        "id": "32",
+        "term": "promise",
+        "type": "",
+        "meaning": "n: a pledge, a commitment; v: to pledge to do, bring about, or provide",
+        "pronunciation": "/ˈprɒm.ɪs/ ",
+        "example": "",
+        "audio": "promise",
+        "image": "assets/images/words/promise.jpg"
+      },
+      {
+        "id": "33",
+        "term": "protect",
+        "type": "(v)",
+        "meaning": "to guard",
+        "pronunciation": "/prəˈtekt/ ",
+        "example": "",
+        "audio": "protect",
+        "image": "assets/images/words/protect.jpg"
+      },
+      {
+        "id": "34",
+        "term": "reputation",
+        "type": "(n)",
+        "meaning": "the overall quality of character",
+        "pronunciation": "/,repju:'teiʃn/",
+        "example": "",
+        "audio": "reputation",
+        "image": "assets/images/words/reputation.jpg"
+      },
+      {
+        "id": "35",
+        "term": "require",
+        "type": "(v)",
+        "meaning": "to deem necessary or essential",
+        "pronunciation": "/ri'kwaiə/",
+        "example": "",
+        "audio": "require",
+        "image": "assets/images/words/require.jpg"
+      },
+      {
+        "id": "36",
+        "term": "variety",
+        "type": "(n)",
+        "meaning": "many different kinds",
+        "pronunciation": "/və'raiəti/",
+        "example": "",
+        "audio": "variety",
+        "image": "assets/images/words/variety.jpg"
+      }
+    ]
+  },
+  {
+    "id": "4",
+    "name": "Business Planning",
+    "image": "assets/images/lessons/businessplanning.jpg",
+    "words": [
+      {
+        "id": "37",
+        "term": "address",
+        "type": "",
+        "meaning": "n., a formal speech; v., to direct to the attention of",
+        "pronunciation": "/ə'dres/",
+        "example": "",
+        "audio": "address",
+        "image": "assets/images/words/address.jpg"
+      },
+      {
+        "id": "38",
+        "term": "avoid",
+        "type": "(v)",
+        "meaning": "to stay clear of; to keep from happening",
+        "pronunciation": "/ə'vɔid/",
+        "example": "",
+        "audio": "avoid",
+        "image": "assets/images/words/avoid.jpg"
+      },
+      {
+        "id": "39",
+        "term": "demonstrate",
+        "type": "(v)",
+        "meaning": "to show clearly and deliberately; to present by example",
+        "pronunciation": "/'demənstreit/",
+        "example": "",
+        "audio": "demonstrate",
+        "image": "assets/images/words/demonstrate.png"
+      },
+      {
+        "id": "40",
+        "term": "develop",
+        "type": "(v)",
+        "meaning": "to expand, progress, or improve",
+        "pronunciation": "/di'veləp/",
+        "example": "",
+        "audio": "develop",
+        "image": "assets/images/words/develop.jpg"
+      },
+      {
+        "id": "41",
+        "term": "evaluate",
+        "type": "(v)",
+        "meaning": "to determine the value or impact of",
+        "pronunciation": "/i'væljueit/",
+        "example": "",
+        "audio": "evaluate",
+        "image": "assets/images/words/evaluate.jpg"
+      },
+      {
+        "id": "42",
+        "term": "gather",
+        "type": "(v)",
+        "meaning": "to accumulate; to conclude",
+        "pronunciation": "/'gæðə/",
+        "example": "",
+        "audio": "gather",
+        "image": "assets/images/words/gather.jpg"
+      },
+      {
+        "id": "43",
+        "term": "offer",
+        "type": "",
+        "meaning": "n., a proposal; v., to propose; to present in order to meet a need or satisfy a requirement",
+        "pronunciation": "/'ɔfə/",
+        "example": "",
+        "audio": "offer",
+        "image": "assets/images/words/offer.jpg"
+      },
+      {
+        "id": "44",
+        "term": "primarily ",
+        "type": "(adv)",
+        "meaning": "first; most importantly",
+        "pronunciation": "/'praimərili/",
+        "example": "",
+        "audio": "primarily",
+        "image": "assets/images/words/primarily.jpg"
+      },
+      {
+        "id": "45",
+        "term": "risk",
+        "type": "(n)",
+        "meaning": "the chance of loss or damage",
+        "pronunciation": "/risk/",
+        "example": "",
+        "audio": "risk",
+        "image": "assets/images/words/risk.jpg"
+      },
+      {
+        "id": "46",
+        "term": "strategy",
+        "type": "(n)",
+        "meaning": "a plan of action",
+        "pronunciation": "/'strætidʤi/",
+        "example": "",
+        "audio": "strategy",
+        "image": "assets/images/words/strategy.jpg"
+      },
+      {
+        "id": "47",
+        "term": "strong",
+        "type": "(adj)",
+        "meaning": "powerful; economically or financially sound",
+        "pronunciation": "/strɔɳ/",
+        "example": "",
+        "audio": "strong",
+        "image": "assets/images/words/strong.jpg"
+      },
+      {
+        "id": "48",
+        "term": "substitution",
+        "type": "(n)",
+        "meaning": "replacement",
+        "pronunciation": "/,sʌbsti'tju:ʃn/",
+        "example": "",
+        "audio": "substitution",
+        "image": "assets/images/words/substitution.jpg"
+      }
+    ]
+  },
+  {
+    "id": "5",
+    "name": "Conferences",
+    "image": "assets/images/lessons/conferences.jpg",
+    "words": [
+      {
+        "id": "49",
+        "term": "accommodate ",
+        "type": "(v)",
+        "meaning": "to fit; to provide with something needed",
+        "pronunciation": "/ə'kɔmədeit/",
+        "example": "",
+        "audio": "accommodate",
+        "image": "assets/images/words/accommodate.jpg"
+      },
+      {
+        "id": "50",
+        "term": "arrangement",
+        "type": "(n)",
+        "meaning": "the plan or organization",
+        "pronunciation": "/ə'reindʤmənt/",
+        "example": "",
+        "audio": "arrangement",
+        "image": "assets/images/words/arrangement.jpg"
+      },
+      {
+        "id": "51",
+        "term": "association",
+        "type": "(n)",
+        "meaning": "an organization of persons or groups having a common interest; a relationship or society",
+        "pronunciation": "/ə,sousi'eiʃn/",
+        "example": "",
+        "audio": "association",
+        "image": "assets/images/words/association.jpg"
+      },
+      {
+        "id": "52",
+        "term": "attend",
+        "type": "(v)",
+        "meaning": "to go to; to pay attention to",
+        "pronunciation": "/ə'tend/",
+        "example": "",
+        "audio": "attend",
+        "image": "assets/images/words/attend.jpg"
+      },
+      {
+        "id": "53",
+        "term": "get in touch",
+        "type": "(v)",
+        "meaning": "to make contact with",
+        "pronunciation": "/get in tʌtʃ/",
+        "example": "",
+        "audio": "getintouch",
+        "image": "assets/images/words/getintouch.jpg"
+      },
+      {
+        "id": "54",
+        "term": "hold ",
+        "type": "(v)",
+        "meaning": "to accommodate; to conduct",
+        "pronunciation": "/həʊld/ ",
+        "example": "",
+        "audio": "hold",
+        "image": "assets/images/words/hold.jpg"
+      },
+      {
+        "id": "55",
+        "term": "location",
+        "type": "(n)",
+        "meaning": "a position or site",
+        "pronunciation": "/lou'keiʃn/",
+        "example": "",
+        "audio": "location",
+        "image": "assets/images/words/location.jpg"
+      },
+      {
+        "id": "56",
+        "term": "overcrowded",
+        "type": "(adj)",
+        "meaning": "too crowded",
+        "pronunciation": "/ˌoʊ.vɚˈkraʊ.dɪd/",
+        "example": "",
+        "audio": "overcrowded",
+        "image": "assets/images/words/overcrowded.jpg"
+      },
+      {
+        "id": "57",
+        "term": "register",
+        "type": "",
+        "meaning": "a record; v., to record",
+        "pronunciation": "/'redʤistə/",
+        "example": "",
+        "audio": "register",
+        "image": "assets/images/words/register.jpg"
+      },
+      {
+        "id": "58",
+        "term": "select",
+        "type": "",
+        "meaning": "v., to choose from a group; adj., specially chosen",
+        "pronunciation": "/si'lekt/",
+        "example": "",
+        "audio": "select",
+        "image": "assets/images/words/select.jpg"
+      },
+      {
+        "id": "59",
+        "term": "session",
+        "type": "(n)",
+        "meaning": "a meeting",
+        "pronunciation": "/'seʃn/",
+        "example": "",
+        "audio": "session",
+        "image": "assets/images/words/session.jpg"
+      },
+      {
+        "id": "60",
+        "term": "take part in",
+        "type": "(v)",
+        "meaning": "to join or participate",
+        "pronunciation": "/teɪk pɑ:t in/ ",
+        "example": "",
+        "audio": "takepartin",
+        "image": "assets/images/words/takepartin.jpg"
+      }
+    ]
+  },
+  {
+    "id": "6",
+    "name": "Computers",
+    "image": "assets/images/lessons/computers.jpg",
+    "words": [
+      {
+        "id": "61",
+        "term": "access",
+        "type": "",
+        "meaning": "n. the ability or right to enter or use; v., to obtain; to gain entry",
+        "pronunciation": "/'ækses/",
+        "example": "",
+        "audio": "access",
+        "image": "assets/images/words/access.jpg"
+      },
+      {
+        "id": "62",
+        "term": "allocate ",
+        "type": "(v)",
+        "meaning": "to designate for a specific purpose",
+        "pronunciation": "/'æləkeit/",
+        "example": "",
+        "audio": "allocate",
+        "image": "assets/images/words/allocate.png"
+      },
+      {
+        "id": "63",
+        "term": "compatible ",
+        "type": "(adj)",
+        "meaning": "able to function together",
+        "pronunciation": "/kəmˈpæt̬.ə.bəl/",
+        "example": "",
+        "audio": "compatible",
+        "image": "assets/images/words/compatible.jpg"
+      },
+      {
+        "id": "64",
+        "term": "delete ",
+        "type": "(v)",
+        "meaning": "to remove; to erase",
+        "pronunciation": "/di'li:t/",
+        "example": "",
+        "audio": "delete",
+        "image": "assets/images/words/delete.jpg"
+      },
+      {
+        "id": "65",
+        "term": "display",
+        "type": "",
+        "meaning": "what is visible on a monitor; v., to show",
+        "pronunciation": "/dis'plei/",
+        "example": "",
+        "audio": "display",
+        "image": "assets/images/words/display.jpg"
+      },
+      {
+        "id": "66",
+        "term": "duplicate",
+        "type": "(v)",
+        "meaning": "to produce something equal; to make identical",
+        "pronunciation": "/'dju:plikit/",
+        "example": "",
+        "audio": "duplicate",
+        "image": "assets/images/words/duplicate.jpg"
+      },
+      {
+        "id": "67",
+        "term": "failure ",
+        "type": "(n)",
+        "meaning": "an unsuccessful work or effort",
+        "pronunciation": "/'feiljə/",
+        "example": "",
+        "audio": "failure",
+        "image": "assets/images/words/failure.jpg"
+      },
+      {
+        "id": "68",
+        "term": "figure out",
+        "type": "(v)",
+        "meaning": "to understand; to solve",
+        "pronunciation": "/'figə aut/",
+        "example": "",
+        "audio": "figureout",
+        "image": "assets/images/words/figureout.jpg"
+      },
+      {
+        "id": "69",
+        "term": "ignore",
+        "type": "(v)",
+        "meaning": "not to notice; to disregard",
+        "pronunciation": "/ig'nɔ:/",
+        "example": "",
+        "audio": "ignore",
+        "image": "assets/images/words/ignore.jpg"
+      },
+      {
+        "id": "70",
+        "term": "search ",
+        "type": "",
+        "meaning": "n., investigation; v., to look for",
+        "pronunciation": "/sə:tʃ/",
+        "example": "",
+        "audio": "search",
+        "image": "assets/images/words/search.jpg"
+      },
+      {
+        "id": "71",
+        "term": "shut down",
+        "type": "(v)",
+        "meaning": "to turn off; to cease operations",
+        "pronunciation": "/ʃʌt /daʊn//",
+        "example": "",
+        "audio": "shutdown",
+        "image": "assets/images/words/shutdown.jpg"
+      },
+      {
+        "id": "72",
+        "term": "warning",
+        "type": "(n)",
+        "meaning": "an alert to danger or problems",
+        "pronunciation": "/'wɔ:niɳ/",
+        "example": "",
+        "audio": "warning",
+        "image": "assets/images/words/warning.jpg"
+      }
+    ]
+  },
+  {
+    "id": "7",
+    "name": "Office Technology",
+    "image": "assets/images/lessons/officetechnology.jpg",
+    "words": [
+      {
+        "id": "73",
+        "term": "affordable ",
+        "type": "(adj)",
+        "meaning": "able to be paid for; not too expensive",
+        "pronunciation": "/əˈfɔːr.də.bəl/",
+        "example": "",
+        "audio": "affordable",
+        "image": "assets/images/words/affordable.jpg"
+      },
+      {
+        "id": "74",
+        "term": "as needed",
+        "type": "(adv)",
+        "meaning": "as necessary",
+        "pronunciation": "/æz ni:d/",
+        "example": "",
+        "audio": "asneeded",
+        "image": "assets/images/words/asneeded.jpg"
+      },
+      {
+        "id": "75",
+        "term": "be in charge of",
+        "type": "(v)",
+        "meaning": "to be in control or command of",
+        "pronunciation": "/bi: in tʃɑ:dʤ ɔv/",
+        "example": "",
+        "audio": "beinchargeof",
+        "image": "assets/images/words/beinchargeof.jpg"
+      },
+      {
+        "id": "76",
+        "term": "capacity ",
+        "type": "(n)",
+        "meaning": "the ability to contain or hold; themaximum that something can hold or do",
+        "pronunciation": "/kə'pæsiti/",
+        "example": "",
+        "audio": "capacity",
+        "image": "assets/images/words/capacity.jpg"
+      },
+      {
+        "id": "77",
+        "term": "durable ",
+        "type": "(adj)",
+        "meaning": "sturdy, strong, lasting",
+        "pronunciation": "/'djuərəbl/",
+        "example": "",
+        "audio": "durable",
+        "image": "assets/images/words/durable.jpg"
+      },
+      {
+        "id": "78",
+        "term": "initiative",
+        "type": "(adj)",
+        "meaning": "he first step; an active role",
+        "pronunciation": "/ɪˈnɪʃ.ə.t̬ɪv/",
+        "example": "",
+        "audio": "initiative",
+        "image": "assets/images/words/initiative.jpg"
+      },
+      {
+        "id": "79",
+        "term": "physically ",
+        "type": "(adv)",
+        "meaning": "with the senses; of the body",
+        "pronunciation": "/ˈfɪz.ɪ.kəl.i/",
+        "example": "",
+        "audio": "physically",
+        "image": "assets/images/words/physically.jpg"
+      },
+      {
+        "id": "80",
+        "term": "provider",
+        "type": "(n)",
+        "meaning": "a supplier",
+        "pronunciation": "/prəˈvaɪ.dɚ/",
+        "example": "",
+        "audio": "provider",
+        "image": "assets/images/words/provider.jpg"
+      },
+      {
+        "id": "81",
+        "term": "recur",
+        "type": "(v)",
+        "meaning": "to occur again or repeatedly",
+        "pronunciation": "/ri'kə:/",
+        "example": "",
+        "audio": "recur",
+        "image": "assets/images/words/recur.jpg"
+      },
+      {
+        "id": "82",
+        "term": "reduction ",
+        "type": "(n)",
+        "meaning": "a lessening; a decrease",
+        "pronunciation": "/rɪˈdʌk.ʃən/",
+        "example": "",
+        "audio": "reduction",
+        "image": "assets/images/words/reduction.jpg"
+      },
+      {
+        "id": "107",
+        "term": "stay on top of",
+        "type": "(v)",
+        "meaning": "to know what is going on; to know thelatest information",
+        "pronunciation": "/stei ɔn tɔp ɔv/",
+        "example": "",
+        "audio": "stayontopof",
+        "image": "assets/images/words/stayontopof.jpg"
+      },
+      {
+        "id": "108",
+        "term": "stock",
+        "type": "",
+        "meaning": "v.,to keep on hand; n., a supply",
+        "pronunciation": "/stɔk/",
+        "example": "",
+        "audio": "stock",
+        "image": "assets/images/words/stock.jpg"
+      }
+    ]
+  },
+  {
+    "id": "8",
+    "name": "Office Procedures",
+    "image": "assets/images/lessons/officeprocedures.jpg",
+    "words": [
+      {
+        "id": "83",
+        "term": "appreciation",
+        "type": "(n)",
+        "meaning": "recognition, understanding; thanks",
+        "pronunciation": "/ə,pri:ʃi'eiʃn/",
+        "example": "",
+        "audio": "appreciation",
+        "image": "assets/images/words/appreciation.jpg"
+      },
+      {
+        "id": "84",
+        "term": "be made of",
+        "type": "(v)",
+        "meaning": "to consist of",
+        "pronunciation": "/bi: meid ɔv/",
+        "example": "",
+        "audio": "bemadeof",
+        "image": "assets/images/words/bemadeof.jpg"
+      },
+      {
+        "id": "85",
+        "term": "bring in",
+        "type": "(v)",
+        "meaning": "to hire or recruit; to cause to appear",
+        "pronunciation": "/brɪŋ in/ ",
+        "example": "",
+        "audio": "bringin",
+        "image": "assets/images/words/bringin.jpg"
+      },
+      {
+        "id": "86",
+        "term": "casually ",
+        "type": "(adv)",
+        "meaning": "informally",
+        "pronunciation": "/ˈkæʒ.u.əl/ ",
+        "example": "",
+        "audio": "casually",
+        "image": "assets/images/words/casually.jpg"
+      },
+      {
+        "id": "87",
+        "term": "code",
+        "type": "(n)",
+        "meaning": "rules of behavior",
+        "pronunciation": "/kəʊd/",
+        "example": "",
+        "audio": "code",
+        "image": "assets/images/words/code.jpg"
+      },
+      {
+        "id": "88",
+        "term": "expose",
+        "type": "(v)",
+        "meaning": "to make aware; to give experience",
+        "pronunciation": "/iks'pouz/",
+        "example": "",
+        "audio": "expose",
+        "image": "assets/images/words/expose.jpg"
+      },
+      {
+        "id": "89",
+        "term": "glimpse",
+        "type": "(v)",
+        "meaning": "a quick look",
+        "pronunciation": "/ɡlɪmps/",
+        "example": "",
+        "audio": "glimpse",
+        "image": "assets/images/words/glimpse.jpg"
+      },
+      {
+        "id": "90",
+        "term": "out of",
+        "type": "(adj)",
+        "meaning": "no longer having, missing",
+        "pronunciation": "/aut ɔv/",
+        "example": "",
+        "audio": "outof",
+        "image": "assets/images/words/outof.jpg"
+      },
+      {
+        "id": "91",
+        "term": "outdated ",
+        "type": "(adj)",
+        "meaning": "obsolete; not currently in use",
+        "pronunciation": "/ˌaʊtˈdeɪ.t̬ɪd/",
+        "example": "",
+        "audio": "outdated",
+        "image": "assets/images/words/outdated.jpg"
+      },
+      {
+        "id": "92",
+        "term": "practice",
+        "type": "",
+        "meaning": "n., method of doing something; v., to repeat in order to learn",
+        "pronunciation": "/ˈpræk.tɪs/",
+        "example": "",
+        "audio": "practice",
+        "image": "assets/images/words/practice.jpg"
+      },
+      {
+        "id": "93",
+        "term": "reinforce",
+        "type": "(v)",
+        "meaning": "to strengthen, support",
+        "pronunciation": "/ˌriː.ɪnˈfɔːrs/",
+        "example": "",
+        "audio": "reinforce",
+        "image": "assets/images/words/reinforce.jpg"
+      },
+      {
+        "id": "94",
+        "term": "verbally ",
+        "type": "(adv)",
+        "meaning": "in spoken form",
+        "pronunciation": "/ˈvɝː.bəl.i/",
+        "example": "",
+        "audio": "verbally",
+        "image": "assets/images/words/verbally.jpg"
+      }
+    ]
+  },
+  {
+    "id": "9",
+    "name": "Electronics",
+    "image": "assets/images/lessons/electronics.jpg",
+    "words": []
+  },
+  {
+    "id": "10",
+    "name": "Correspondence",
+    "image": "assets/images/lessons/correspondence.jpg",
+    "words": [
+      {
+        "id": "95",
+        "term": "assemble ",
+        "type": "(v)",
+        "meaning": "to put together; to bring together",
+        "pronunciation": "/ə'sembl/",
+        "example": "",
+        "audio": "assemble",
+        "image": "assets/images/words/assemble.jpg"
+      },
+      {
+        "id": "96",
+        "term": "beforehand",
+        "type": "(adv)",
+        "meaning": "in advance, in anticipation",
+        "pronunciation": "/bi'fɔ:hænd/",
+        "example": "",
+        "audio": "beforehand",
+        "image": "assets/images/words/beforehand.jpg"
+      },
+      {
+        "id": "97",
+        "term": "complication",
+        "type": "(n)",
+        "meaning": "difficulty, complex situation",
+        "pronunciation": "/,kɔmpli'keiʃn/",
+        "example": "",
+        "audio": "complication",
+        "image": "assets/images/words/complication.jpg"
+      },
+      {
+        "id": "98",
+        "term": "courier ",
+        "type": "(n)",
+        "meaning": "a messenger, an official delivery person",
+        "pronunciation": "/'kuriə/",
+        "example": "",
+        "audio": "courier",
+        "image": "assets/images/words/courier.jpg"
+      },
+      {
+        "id": "99",
+        "term": "express ",
+        "type": "(adj)",
+        "meaning": "fast and direct",
+        "pronunciation": "/iks'pres/",
+        "example": "",
+        "audio": "express",
+        "image": "assets/images/words/express.jpg"
+      },
+      {
+        "id": "100",
+        "term": "fold",
+        "type": "(v)",
+        "meaning": "to bend paper",
+        "pronunciation": "/fould/",
+        "example": "",
+        "audio": "fold",
+        "image": "assets/images/words/fold.jpg"
+      },
+      {
+        "id": "101",
+        "term": "layout",
+        "type": "(n)",
+        "meaning": "a format; the organization of material on a page",
+        "pronunciation": "/ˈleɪ.aʊt/",
+        "example": "",
+        "audio": "layout",
+        "image": "assets/images/words/layout.jpg"
+      },
+      {
+        "id": "102",
+        "term": "mention",
+        "type": "(n)",
+        "meaning": "something said or written; v., to refer to",
+        "pronunciation": "/'menʃn/",
+        "example": "",
+        "audio": "mention",
+        "image": "assets/images/words/mention.jpg"
+      },
+      {
+        "id": "103",
+        "term": "petition",
+        "type": "(n)",
+        "meaning": "a formal, written request; v., to make a formal request",
+        "pronunciation": "/pi'tiʃn/",
+        "example": "",
+        "audio": "petition",
+        "image": "assets/images/words/petition.jpg"
+      },
+      {
+        "id": "104",
+        "term": "proof",
+        "type": "(v)",
+        "meaning": " v., to look for errors; n., evidence",
+        "pronunciation": "/pruːf/",
+        "example": "",
+        "audio": "proof",
+        "image": "assets/images/words/proof.jpg"
+      },
+      {
+        "id": "105",
+        "term": "register",
+        "type": "",
+        "meaning": "to record, to track; n., a record",
+        "pronunciation": "/'redʤistə/",
+        "example": "",
+        "audio": "register",
+        "image": "assets/images/words/register.jpg"
+      },
+      {
+        "id": "106",
+        "term": "revise ",
+        "type": "(v)",
+        "meaning": "to rewrite",
+        "pronunciation": "/ri'vaiz/",
+        "example": "",
+        "audio": "revise",
+        "image": "assets/images/words/revise.jpg"
+      }
+    ]
+  }
+]
