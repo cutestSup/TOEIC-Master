@@ -8,7 +8,7 @@ import { cn } from "@/lib/utils";
 
 export default function MockTest() {
     const [isActive, setIsActive] = useState(false);
-    const [timeLeft, setTimeLeft] = useState(7200); // 2 hours in seconds
+    const [timeLeft, setTimeLeft] = useState(7200); 
     const [mode, setMode] = useState<'Full' | 'Listening' | 'Reading'>('Full');
 
     // Timer Logic

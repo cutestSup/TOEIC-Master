@@ -1,6 +1,7 @@
 "use client"
 
 import { useEffect, useRef, useState } from 'react';
+import Image from 'next/image';
 import { motion } from 'framer-motion';
 import { VocabCard } from '@/types';
 import { Card, CardContent } from "@/components/ui/card";
@@ -106,7 +107,18 @@ export default function Flashcard({ card, onStatusChange, onPrev, canGoBack }: F
                         className="absolute w-full h-full backface-hidden inset-0 flex flex-col items-center justify-center p-6 text-center"
                         style={{ transform: 'rotateY(180deg)' }}
                     >
-                        <CardContent className="space-y-4 text-center">
+                        <CardContent className="space-y-4 text-center w-full">
+                            {card.image && (
+                                <div className="relative w-32 h-32 mx-auto">
+                                    <Image
+                                        src={card.image.replace(/^assets\//, '/')}
+                                        alt={card.term}
+                                        fill
+                                        className="object-cover rounded"
+                                        sizes="128px"
+                                    />
+                                </div>
+                            )}
                             <div className="text-2xl font-bold text-primary">{card.definition}</div>
                             {card.example && <div className="italic text-lg">"{card.example}"</div>}
                         </CardContent>
