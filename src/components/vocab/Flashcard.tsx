@@ -167,7 +167,7 @@ export default function Flashcard({ card, onStatusChange, onPrev, canGoBack }: F
                                         alt={card.term}
                                         fill
                                         className="object-cover rounded"
-                                        sizes="128px"
+                                        sizes="144px"
                                     />
                                 </div>
                             )}
