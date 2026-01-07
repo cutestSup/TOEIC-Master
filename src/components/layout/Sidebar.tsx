@@ -9,7 +9,8 @@ import {
     Bug,
     Globe,
     BookOpen,
-    LayoutDashboard
+    LayoutDashboard,
+    GraduationCap
 } from "lucide-react";
 import { ModeToggle } from "@/components/mode-toggle";
 
@@ -19,6 +20,7 @@ export default function Sidebar() {
     const links = [
         { href: "/", label: "Dashboard", icon: LayoutDashboard },
         { href: "/daily", label: "Daily Sprint", icon: CheckSquare },
+        { href: "/lessons", label: "Lessons", icon: GraduationCap },
         { href: "/vocab", label: "Vocabulary", icon: BookOpen },
         { href: "/bugs", label: "Bug Tracker", icon: Bug },
         { href: "/mock", label: "Mock Test", icon: BookOpen },

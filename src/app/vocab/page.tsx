@@ -7,10 +7,10 @@ import { useStore } from "@/lib/store";
 import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { Plus, Trash2, Upload, BookOpen } from "lucide-react";
+import { Plus, Trash2, Upload, BookOpen, RotateCcw } from "lucide-react";
 
 export default function VocabDashboard() {
-    const { decks, addDeck, deleteDeck, importDeck } = useStore();
+    const { decks, addDeck, deleteDeck, importDeck, resetStore } = useStore();
     const [activeTab, setActiveTab] = useState<'view' | 'import'>('view');
     const [newDeckName, setNewDeckName] = useState("");
     const [importText, setImportText] = useState("");
@@ -64,15 +64,29 @@ export default function VocabDashboard() {
 
             {activeTab === 'view' && (
                 <div className="space-y-6">
-                    <Card className="max-w-md">
-                        <CardHeader><CardTitle>Create New Deck</CardTitle></CardHeader>
-                        <CardContent>
-                            <form onSubmit={handleCreateDeck} className="flex space-x-2">
-                                <Input placeholder="Deck Name (e.g., Marketing)" value={newDeckName} onChange={e => setNewDeckName(e.target.value)} />
-                                <Button type="submit"><Plus className="h-4 w-4" /></Button>
-                            </form>
-                        </CardContent>
-                    </Card>
+                    <div className="flex items-center justify-between">
+                        <Card className="max-w-md flex-1">
+                            <CardHeader><CardTitle>Create New Deck</CardTitle></CardHeader>
+                            <CardContent>
+                                <form onSubmit={handleCreateDeck} className="flex space-x-2">
+                                    <Input placeholder="Deck Name (e.g., Marketing)" value={newDeckName} onChange={e => setNewDeckName(e.target.value)} />
+                                    <Button type="submit"><Plus className="h-4 w-4" /></Button>
+                                </form>
+                            </CardContent>
+                        </Card>
+                        <Button 
+                            variant="outline" 
+                            onClick={() => {
+                                if (confirm('Reset all decks to default? This will restore all 10 TOEIC lessons and clear your progress.')) {
+                                    resetStore();
+                                    window.location.reload();
+                                }
+                            }}
+                            className="ml-4"
+                        >
+                            <RotateCcw className="mr-2 h-4 w-4" /> Reset Decks
+                        </Button>
+                    </div>
 
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                         {decks.map(deck => (

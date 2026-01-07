@@ -21,6 +21,7 @@ export default function Flashcard({ card, onStatusChange, onPrev, canGoBack }: F
     const { speak, cancel, isSpeaking } = useTextToSpeech();
     const [isAudioPlaying, setIsAudioPlaying] = useState(false);
     const audioRef = useRef<HTMLAudioElement | null>(null);
+    const [exitX, setExitX] = useState(0);
 
     const handleFlip = () => setIsFlipped(!isFlipped);
 
@@ -67,11 +68,62 @@ export default function Flashcard({ card, onStatusChange, onPrev, canGoBack }: F
         };
     }, []);
 
+    const handleDragEnd = (_: any, info: any) => {
+        const threshold = 100;
+        
+        if (info.offset.x > threshold) {
+            // Swipe right = Mastered
+            setExitX(1000);
+            setTimeout(() => {
+                onStatusChange('mastered');
+                setExitX(0);
+                setIsFlipped(false);
+            }, 300);
+        } else if (info.offset.x < -threshold) {
+            // Swipe left = Learning (next word)
+            setExitX(-1000);
+            setTimeout(() => {
+                onStatusChange('learning');
+                setExitX(0);
+                setIsFlipped(false);
+            }, 300);
+        }
+    };
+
     return (
-        <div className="flex flex-col items-center">
-            <div
-                className="relative w-full max-w-md h-64 perspective-1000 cursor-pointer"
-                onClick={handleFlip}
+        <div className="flex flex-col items-center relative">
+            {/* Swipe Hints */}
+            {isFlipped && (
+                <>
+                    <motion.div 
+                        className="absolute left-0 top-1/2 -translate-y-1/2 z-10 bg-red-500/20 rounded-r-lg px-4 py-2 pointer-events-none"
+                        initial={{ opacity: 0, x: -20 }}
+                        animate={{ opacity: 0.7, x: 0 }}
+                        transition={{ delay: 0.5 }}
+                    >
+                        <span className="text-sm font-medium text-red-700 dark:text-red-300">← Review</span>
+                    </motion.div>
+                    <motion.div 
+                        className="absolute right-0 top-1/2 -translate-y-1/2 z-10 bg-green-500/20 rounded-l-lg px-4 py-2 pointer-events-none"
+                        initial={{ opacity: 0, x: 20 }}
+                        animate={{ opacity: 0.7, x: 0 }}
+                        transition={{ delay: 0.5 }}
+                    >
+                        <span className="text-sm font-medium text-green-700 dark:text-green-300">Mastered →</span>
+                    </motion.div>
+                </>
+            )}
+
+            <motion.div
+                className="relative w-full max-w-md h-64 perspective-1000 cursor-grab active:cursor-grabbing"
+                drag={isFlipped ? "x" : false}
+                dragConstraints={{ left: 0, right: 0 }}
+                dragElastic={0.7}
+                onDragEnd={handleDragEnd}
+                animate={{ x: exitX }}
+                transition={{ type: "spring", stiffness: 300, damping: 30 }}
+                onClick={!isFlipped ? handleFlip : undefined}
+                style={{ touchAction: 'none' }}
             >
                 <motion.div
                     className="w-full h-full relative preserve-3d"
@@ -124,11 +176,14 @@ export default function Flashcard({ card, onStatusChange, onPrev, canGoBack }: F
                         </CardContent>
                     </Card>
                 </motion.div>
-            </div>
+            </motion.div>
 
-            {/* Controls */}
+            {/* Controls - Now secondary option */}
             {isFlipped && (
-                <div className="flex flex-wrap gap-3 mt-8 justify-center">
+                <div className="flex flex-wrap gap-3 mt-6 justify-center">
+                    <p className="text-xs text-muted-foreground w-full text-center mb-2">
+                        Swipe left to review, right to master • Or use buttons below
+                    </p>
                     <button
                         onClick={() => {
                             setIsFlipped(false);
