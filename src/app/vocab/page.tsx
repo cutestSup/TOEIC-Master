@@ -8,6 +8,8 @@ import { Card, CardHeader, CardTitle, CardContent, CardFooter } from "@/componen
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Plus, Trash2, Upload, BookOpen, RotateCcw } from "lucide-react";
+import { motion } from "framer-motion";
+import { Badge } from "@/components/ui/badge";
 
 export default function VocabDashboard() {
     const { decks, addDeck, deleteDeck, importDeck, resetStore } = useStore();
@@ -54,13 +56,21 @@ export default function VocabDashboard() {
 
     return (
         <div className="space-y-6">
-            <div className="flex items-center justify-between">
-                <h1 className="text-3xl font-bold tracking-tight">Vocabulary Decks</h1>
+            <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="flex items-center justify-between"
+            >
+                <div>
+                    <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">Vocabulary Decks</h1>
+                    <p className="text-muted-foreground mt-2">Master TOEIC vocabulary with interactive flashcards</p>
+                </div>
                 <div className="space-x-2">
                     <Button variant={activeTab === 'view' ? "default" : "outline"} onClick={() => setActiveTab('view')}>My Decks</Button>
                     <Button variant={activeTab === 'import' ? "default" : "outline"} onClick={() => setActiveTab('import')}><Upload className="mr-2 h-4 w-4" /> Import</Button>
                 </div>
-            </div>
+            </motion.div>
 
             {activeTab === 'view' && (
                 <div className="space-y-6">
@@ -89,42 +99,84 @@ export default function VocabDashboard() {
                     </div>
 
                     <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-                        {decks.map(deck => (
-                            <Card key={deck.id} className="hover:border-primary/50 transition-colors overflow-hidden">
-                                {deck.image && (
-                                    <div className="relative w-full h-36">
-                                        <Image
-                                            src={deck.image}
-                                            alt={deck.name}
-                                            fill
-                                            className="object-cover"
-                                            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                                            priority={false}
-                                        />
-                                    </div>
-                                )}
-                                <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-2">
-                                    <div>
-                                        <CardTitle className="text-lg font-bold">{deck.name}</CardTitle>
-                                        <div className="mt-1 text-sm text-muted-foreground">
-                                            {deck.cards.filter(c => c.status === 'mastered').length} mastered · {deck.cards.length} words
-                                        </div>
-                                    </div>
-                                    <Button variant="ghost" size="icon" onClick={() => deleteDeck(deck.id)}><Trash2 className="h-4 w-4 text-destructive" /></Button>
-                                </CardHeader>
-                                <CardContent>
-                                    <div className="flex items-center justify-between text-sm text-muted-foreground">
-                                        <span>Learning</span>
-                                        <span>{deck.cards.filter(c => c.status !== 'mastered').length}</span>
-                                    </div>
-                                </CardContent>
-                                <CardFooter>
-                                    <Link href={`/vocab/${deck.id}`} className="w-full">
-                                        <Button className="w-full"><BookOpen className="mr-2 h-4 w-4" /> Study Now</Button>
-                                    </Link>
-                                </CardFooter>
-                            </Card>
-                        ))}
+                        {decks.map((deck, index) => {
+                            const masteredCount = deck.cards.filter(c => c.status === 'mastered').length;
+                            const totalCount = deck.cards.length;
+                            const progress = totalCount > 0 ? (masteredCount / totalCount) * 100 : 0;
+                            return (
+                                <motion.div
+                                    key={deck.id}
+                                    initial={{ opacity: 0, y: 20 }}
+                                    animate={{ opacity: 1, y: 0 }}
+                                    transition={{ duration: 0.5, delay: index * 0.1 }}
+                                >
+                                    <Card className="hover:border-primary/50 transition-all duration-300 hover:shadow-lg overflow-hidden group border-2">
+                                        {deck.image && (
+                                            <div className="relative w-full h-40 overflow-hidden">
+                                                <Image
+                                                    src={deck.image}
+                                                    alt={deck.name}
+                                                    fill
+                                                    className="object-cover group-hover:scale-110 transition-transform duration-300"
+                                                    sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
+                                                    priority={false}
+                                                />
+                                                <div className="absolute inset-0 bg-gradient-to-t from-background/80 to-transparent" />
+                                            </div>
+                                        )}
+                                        <CardHeader className="flex flex-row items-start justify-between space-y-0 pb-3">
+                                            <div className="flex-1">
+                                                <CardTitle className="text-lg font-bold group-hover:text-primary transition-colors">{deck.name}</CardTitle>
+                                                <div className="mt-2 flex items-center gap-2 flex-wrap">
+                                                    <Badge variant="secondary" className="text-xs">
+                                                        {masteredCount} mastered
+                                                    </Badge>
+                                                    <Badge variant="outline" className="text-xs">
+                                                        {totalCount} words
+                                                    </Badge>
+                                                </div>
+                                            </div>
+                                            <Button 
+                                                variant="ghost" 
+                                                size="icon" 
+                                                onClick={() => deleteDeck(deck.id)}
+                                                className="opacity-0 group-hover:opacity-100 transition-opacity"
+                                            >
+                                                <Trash2 className="h-4 w-4 text-destructive" />
+                                            </Button>
+                                        </CardHeader>
+                                        <CardContent className="space-y-3">
+                                            <div className="space-y-2">
+                                                <div className="flex items-center justify-between text-sm">
+                                                    <span className="text-muted-foreground">Progress</span>
+                                                    <span className="font-medium">{Math.round(progress)}%</span>
+                                                </div>
+                                                <div className="w-full bg-muted rounded-full h-2 overflow-hidden">
+                                                    <motion.div 
+                                                        className="bg-gradient-to-r from-primary to-primary/70 h-2 rounded-full"
+                                                        initial={{ width: 0 }}
+                                                        animate={{ width: `${progress}%` }}
+                                                        transition={{ duration: 0.8, delay: index * 0.1 + 0.3 }}
+                                                    />
+                                                </div>
+                                            </div>
+                                            <div className="flex items-center justify-between text-sm text-muted-foreground pt-1">
+                                                <span>Learning</span>
+                                                <span className="font-medium">{deck.cards.filter(c => c.status !== 'mastered').length}</span>
+                                            </div>
+                                        </CardContent>
+                                        <CardFooter>
+                                            <Link href={`/vocab/${deck.id}`} className="w-full">
+                                                <Button className="w-full group/btn">
+                                                    <BookOpen className="mr-2 h-4 w-4 group-hover/btn:rotate-12 transition-transform" /> 
+                                                    Study Now
+                                                </Button>
+                                            </Link>
+                                        </CardFooter>
+                                    </Card>
+                                </motion.div>
+                            );
+                        })}
                     </div>
                 </div>
             )}

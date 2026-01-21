@@ -5,6 +5,7 @@ import { Card, CardHeader, CardTitle, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { BookOpen, Headphones, FileText, Target, ChevronRight, CheckCircle } from "lucide-react";
 import { cn } from "@/lib/utils";
+import { motion } from "framer-motion";
 
 type LessonCategory = 'listening' | 'reading' | 'grammar' | 'strategy';
 
@@ -185,12 +186,17 @@ export default function LessonsPage() {
 
     return (
         <div className="space-y-6">
-            <div className="flex items-center justify-between">
+            <motion.div
+                initial={{ opacity: 0, y: -20 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5 }}
+                className="flex items-center justify-between"
+            >
                 <div>
-                    <h1 className="text-3xl font-bold tracking-tight">TOEIC Lessons</h1>
-                    <p className="text-muted-foreground mt-1">Structured learning path to master all test sections</p>
+                    <h1 className="text-4xl font-bold tracking-tight bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent">TOEIC Lessons</h1>
+                    <p className="text-muted-foreground mt-2">Structured learning path to master all test sections</p>
                 </div>
-            </div>
+            </motion.div>
 
             {/* Category Filter */}
             <div className="flex flex-wrap gap-2">
@@ -286,35 +292,41 @@ export default function LessonsPage() {
                             </span>
                         </div>
                         <div className={cn(
-                            "grid gap-4",
+                            "grid gap-6",
                             filteredLessons.length === 1 ? "md:grid-cols-1 max-w-2xl" :
                             filteredLessons.length === 2 ? "md:grid-cols-2" :
                             "md:grid-cols-2 lg:grid-cols-3"
                         )}>
-                            {filteredLessons.map((lesson) => (
+                            {filteredLessons.map((lesson, index) => (
+                    <motion.div
+                        key={lesson.id}
+                        initial={{ opacity: 0, y: 20 }}
+                        animate={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: index * 0.1 }}
+                    >
                     <Card 
-                        key={lesson.id} 
                         className={cn(
-                            "transition-all cursor-pointer hover:shadow-md flex flex-col",
-                            expandedLesson === lesson.id && "ring-2 ring-primary"
+                            "transition-all cursor-pointer hover:shadow-lg flex flex-col border-2 group overflow-hidden",
+                            expandedLesson === lesson.id && "ring-2 ring-primary shadow-lg"
                         )}
                         onClick={() => setExpandedLesson(expandedLesson === lesson.id ? null : lesson.id)}
                     >
-                        <CardHeader className="pb-3">
-                            <div className="space-y-2">
+                        <CardHeader className="pb-3 relative">
+                            <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                            <div className="space-y-2 relative z-10">
                                 <div className="flex items-center gap-2 flex-wrap">
-                                    <span className={cn("text-xs font-semibold px-2 py-1 rounded-full", getCategoryColor(lesson.category))}>
+                                    <span className={cn("text-xs font-semibold px-3 py-1 rounded-full shadow-sm", getCategoryColor(lesson.category))}>
                                         {lesson.category.toUpperCase()}
                                     </span>
                                     {lesson.part && (
-                                        <span className="text-xs font-medium text-muted-foreground">
+                                        <span className="text-xs font-medium text-muted-foreground bg-muted px-2 py-1 rounded-full">
                                             Part {lesson.part}
                                         </span>
                                     )}
-                                    <span className="text-xs text-muted-foreground ml-auto">{lesson.duration}</span>
+                                    <span className="text-xs text-muted-foreground ml-auto bg-muted px-2 py-1 rounded-full">{lesson.duration}</span>
                                 </div>
-                                <CardTitle className="text-base leading-tight">{lesson.title}</CardTitle>
-                                <p className="text-xs text-muted-foreground line-clamp-2">{lesson.description}</p>
+                                <CardTitle className="text-lg leading-tight group-hover:text-primary transition-colors">{lesson.title}</CardTitle>
+                                <p className="text-sm text-muted-foreground line-clamp-2">{lesson.description}</p>
                             </div>
                         </CardHeader>
                         
@@ -347,6 +359,7 @@ export default function LessonsPage() {
                             </CardContent>
                         )}
                     </Card>
+                    </motion.div>
                 ))}
                         </div>
                     </>

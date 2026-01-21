@@ -115,64 +115,118 @@ export default function Flashcard({ card, onStatusChange, onPrev, canGoBack }: F
             )}
 
             <motion.div
-                className="relative w-full max-w-md h-64 perspective-1000 cursor-grab active:cursor-grabbing"
+                className="relative w-full max-w-md h-80 perspective-1000 cursor-grab active:cursor-grabbing"
                 drag={isFlipped ? "x" : false}
                 dragConstraints={{ left: 0, right: 0 }}
                 dragElastic={0.7}
                 onDragEnd={handleDragEnd}
                 animate={{ x: exitX }}
                 transition={{ type: "spring", stiffness: 300, damping: 30 }}
-                onClick={!isFlipped ? handleFlip : undefined}
+                onClick={handleFlip}
                 style={{ touchAction: 'none' }}
+                whileHover={{ scale: 1.02 }}
+                whileTap={{ scale: 0.98 }}
             >
                 <motion.div
                     className="w-full h-full relative preserve-3d"
                     initial={false}
                     animate={{ rotateY: isFlipped ? 180 : 0 }}
-                    transition={{ duration: 0.6 }}
+                    transition={{ duration: 0.6, ease: "easeInOut" }}
                     style={{ transformStyle: 'preserve-3d' }}
                 >
                     {/* Front */}
-                    <Card className="absolute w-full h-full backface-hidden inset-0 flex flex-col items-center justify-center p-6 text-center">
-                        <CardContent className="space-y-4">
-                            <h2 className="text-4xl font-bold">{card.term}</h2>
+                    <Card className="absolute w-full h-full backface-hidden inset-0 flex flex-col items-center justify-center p-8 text-center border-2 shadow-xl select-none">
+                        <CardContent className="space-y-6">
+                            <motion.h2 
+                                className="text-5xl font-bold text-foreground"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.1 }}
+                            >
+                                {card.term}
+                            </motion.h2>
                             <div className="flex items-center space-x-3 text-muted-foreground justify-center">
-                                <div className="flex items-center space-x-2">
-                                    <span>/{card.type}/</span>
+                                <div className="flex items-center space-x-2 bg-muted px-3 py-1 rounded-full">
+                                    <span className="text-sm font-medium">/{card.type}/</span>
                                     {card.pronunciation && (
-                                        <span className="text-sm text-muted-foreground">{card.pronunciation}</span>
+                                        <span className="text-xs text-muted-foreground">{card.pronunciation}</span>
                                     )}
                                 </div>
-                                <Volume2
-                                    className={`w-6 h-6 cursor-pointer hover:text-primary transition-colors ${
-                                        isSpeaking || isAudioPlaying ? 'text-primary animate-pulse' : ''
+                                <motion.button
+                                    className={`p-2 rounded-full hover:bg-muted transition-colors ${
+                                        isSpeaking || isAudioPlaying ? 'bg-primary/10' : ''
                                     }`}
                                     onClick={playAudio}
-                                />
+                                    whileHover={{ scale: 1.1 }}
+                                    whileTap={{ scale: 0.9 }}
+                                >
+                                    <Volume2
+                                        className={`w-5 h-5 ${
+                                            isSpeaking || isAudioPlaying ? 'text-primary animate-pulse' : 'text-muted-foreground'
+                                        }`}
+                                    />
+                                </motion.button>
                             </div>
-                            <p className="text-sm text-muted-foreground mt-4">(Click to Flip)</p>
+                            <motion.p 
+                                className="text-sm text-muted-foreground mt-4"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.3 }}
+                            >
+                                (Click to Flip)
+                            </motion.p>
                         </CardContent>
                     </Card>
 
                     {/* Back */}
                     <Card
-                        className="absolute w-full h-full backface-hidden inset-0 flex flex-col items-center justify-center p-6 text-center"
+                        className="absolute w-full h-full backface-hidden inset-0 flex flex-col items-center justify-center p-8 text-center border-2 shadow-xl bg-gradient-to-br from-primary/5 to-primary/10 select-none"
                         style={{ transform: 'rotateY(180deg)' }}
                     >
-                        <CardContent className="space-y-4 text-center w-full">
+                        <CardContent className="space-y-6 text-center w-full">
                             {card.image && (
-                                <div className="relative w-32 h-32 mx-auto">
+                                <motion.div 
+                                    className="relative w-40 h-40 mx-auto rounded-xl overflow-hidden shadow-lg"
+                                    initial={{ opacity: 0, scale: 0.8 }}
+                                    animate={{ opacity: 1, scale: 1 }}
+                                    transition={{ delay: 0.2 }}
+                                >
                                     <Image
                                         src={card.image.replace(/^assets\//, '/')}
                                         alt={card.term}
                                         fill
-                                        className="object-cover rounded"
-                                        sizes="144px"
+                                        className="object-cover"
+                                        sizes="160px"
+                                        priority
                                     />
-                                </div>
+                                </motion.div>
                             )}
-                            <div className="text-2xl font-bold text-primary">{card.definition}</div>
-                            {card.example && <div className="italic text-lg">"{card.example}"</div>}
+                            <motion.div 
+                                className="text-3xl font-bold text-primary"
+                                initial={{ opacity: 0, y: 20 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ delay: 0.3 }}
+                            >
+                                {card.definition}
+                            </motion.div>
+                            {card.example && (
+                                <motion.div 
+                                    className="italic text-lg text-muted-foreground bg-muted/50 px-4 py-3 rounded-lg"
+                                    initial={{ opacity: 0 }}
+                                    animate={{ opacity: 1 }}
+                                    transition={{ delay: 0.4 }}
+                                >
+                                    "{card.example}"
+                                </motion.div>
+                            )}
+                            <motion.p 
+                                className="text-sm text-muted-foreground mt-4"
+                                initial={{ opacity: 0 }}
+                                animate={{ opacity: 1 }}
+                                transition={{ delay: 0.3 }}
+                            >
+                                (Click to go back)
+                            </motion.p>
                         </CardContent>
                     </Card>
                 </motion.div>

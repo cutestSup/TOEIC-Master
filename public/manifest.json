@@ -1,0 +1,42 @@
+{
+  "name": "TOEIC Master Sprint",
+  "short_name": "TOEIC Sprint",
+  "description": "3-Month Plan to 800+ TOEIC Score",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#3b82f6",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/images/game-logo.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/images/game-logo.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["education", "productivity"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Vocabulary",
+      "short_name": "Vocab",
+      "description": "Study vocabulary flashcards",
+      "url": "/vocab",
+      "icons": [{ "src": "/images/game-logo.png", "sizes": "96x96" }]
+    },
+    {
+      "name": "Daily Sprint",
+      "short_name": "Daily",
+      "description": "View today's tasks",
+      "url": "/daily",
+      "icons": [{ "src": "/images/game-logo.png", "sizes": "96x96" }]
+    }
+  ]
+}
